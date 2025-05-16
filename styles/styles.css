@@ -256,32 +256,39 @@ input[type="url"] {
   background-color: var(--color-bg-base);
   transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
+
 /* Select styles*/
 select {
+  appearance: none; /* Removes native styling in most browsers */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
   font-family: var(--font-family);
   font-size: var(--font-size);
-  padding: var(--size-xs) var(--size-sm);
+  padding: var(--size-sm) var(--size-md);
   border: 1px solid var(--grey-4);
-  border-radius: var(--size-xxs);
+  border-radius: var(--size-xs);
   width: 100%;
   box-sizing: border-box;
   color: var(--color-text-base);
   background-color: var(--color-bg-base);
-  appearance: none; /* remove default arrow */
-  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"><path fill="none" stroke="%23666" stroke-width="1.5" d="M1 1l4 4 4-4"/></svg>');
+  transition: border-color 0.2s ease-in-out;
+
+  /* Optional: add a custom arrow icon */
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg fill='%23666' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-position: right 10px center;
-  background-size: 10px 6px;
-  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  cursor: pointer;
+  background-position: right var(--size-sm) center;
+  background-size: 1em;
+  padding-right: calc(var(--size-md) + 1.5em); /* extra space for arrow */
 }
-select:hover {
-  border-color: var(--blue-4);
-}
+
 select:focus {
   border-color: var(--blue-6);
   outline: none;
-  box-shadow: 0 0 0 3px rgba(58, 67, 235, 0.3);
+}
+
+select:hover {
+  border-color: var(--blue-5);
 }
 
 /* Hover state */
