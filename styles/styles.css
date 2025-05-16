@@ -1,6 +1,12 @@
 body {
-  background-color: var(--blue-1);
+  background-color: #FFFFFF;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  /* Optional: add line-height or other font related styles */
+  line-height: 1.5;
+  color: #222; /* example text color */
 }
+
 :root {
   /* Light Mode Colors */
   
@@ -198,4 +204,11 @@ body {
   /* For dark mode text and bg, you can add or override here */
   --color-text-base: #ececed;
   --color-bg-base: #1c1d20;
+
+/* Utility class for Leadline font styling */
+.font-leadline {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: 1.5;
+  color: #222;
 }
