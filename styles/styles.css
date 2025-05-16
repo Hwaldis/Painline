@@ -335,3 +335,80 @@ button[type="default"]:disabled {
   cursor: not-allowed;
   color: var(--grey-4);
 }
+/* ===== Progress Bar ===== */
+.progress-bar {
+  margin: var(--size-lg) 0;
+}
+
+.progress-steps {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+/* connecting line */
+.progress-steps::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--grey-3);
+  z-index: 0;
+  border-radius: 2px;
+}
+
+.step {
+  position: relative;
+  z-index: 1;                    /* above the line */
+  text-align: center;
+  flex: 1 1 0;
+}
+
+.step span {
+  display: block;
+  margin-top: var(--size-xs);
+  font-size: 12px;
+  color: var(--grey-6);
+}
+
+/* circle */
+.step::before {
+  content: attr(data-step);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--size-lg);
+  height: var(--size-lg);
+  background: var(--grey-3);
+  color: var(--color-bg-base);
+  border-radius: 50%;
+  font-weight: 600;
+  margin: 0 auto;
+  transition: background 0.25s;
+}
+
+/* active / completed */
+.step.is-active::before,
+.step.is-complete::before {
+  background: var(--blue-6);
+}
+
+.step.is-active span,
+.step.is-complete span {
+  color: var(--blue-6);
+}
+
+.step.is-complete span {
+  font-weight: 600;
+}
+
+/* completed line segment */
+.step.is-complete + .step::before,
+.step.is-complete + .step::after {
+  background: var(--blue-6);
+}
