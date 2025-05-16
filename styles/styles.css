@@ -308,7 +308,7 @@ input[type="url"]:focus {
 }
 
 /* Buttons */
-button {
+button[type="default"] {
   background-color: var(--blue-6);
   color: white;
   font-family: var(--font-family);
@@ -320,14 +320,14 @@ button {
   transition: background-color 0.2s ease-in-out;
 }
 
-button:hover {
+button[type="default"]:hover {
   background-color: var(--blue-4);
 }
-button:focus {
+button[type="default"]:focus {
   outline: 2px solid var(--blue-4);
   outline-offset: 2px;
 }
-button:disabled {
+button[type="default"]:disabled {
   background-color: var(--grey-2);
   cursor: not-allowed;
   color: var(--grey-4);
