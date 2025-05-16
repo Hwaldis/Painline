@@ -1,16 +1,5 @@
-body {
-  background-color: #FFFFFF;
-  font-family: var(--font-family);
-  font-size: var(--font-size);
-  /* Optional: add line-height or other font related styles */
-  line-height: 1.5;
-  color: #222; /* example text color */
-}
-
 :root {
-  /* Light Mode Colors */
-  
-  /* Blue */
+  /* Color variables */
   --blue-1: #ebecfd;
   --blue-2: #d0d2fa;
   --blue-3: #aaaef6;
@@ -165,7 +154,7 @@ body {
   --grey-8: #2d2e33;
   --grey-9: #242529;
   --grey-10: #1c1d20;
-  
+
   /* Seed colors */
   --color-text-base: var(--grey-6);
   --color-text-light-solid: #ffffff;
@@ -186,6 +175,10 @@ body {
   --brand-facebook: #3579EA;
   --brand-snapchat: #FFFC00;
   --brand-recruiterrecommended: #EAA723;
+
+  /* Font variables */
+  --font-family: "Roboto", sans-serif;
+  --font-size: 14px;
 }
 
 [data-theme="dark"] {
@@ -205,10 +198,25 @@ body {
   --color-text-base: #ececed;
   --color-bg-base: #1c1d20;
 
+  /* Font variables */
+  --font-family: "Roboto", sans-serif;
+  --font-size: 14px;
+}
+
+/* Normal CSS rules, outside :root */
+
+body {
+  background-color: var(--color-bg-base);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: 1.5;
+  color: var(--color-text-base);
+}
+
 /* Utility class for Leadline font styling */
 .font-leadline {
   font-family: var(--font-family);
   font-size: var(--font-size);
   line-height: 1.5;
-  color: #222;
+  color: var(--color-text-base);
 }
