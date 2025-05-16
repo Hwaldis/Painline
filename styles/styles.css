@@ -381,7 +381,7 @@ button[type="default"]:disabled {
 .step::before {
   content: attr(data-step);
   display: inline-flex;
-  align-items: center;
+  align-items: absolute;
   justify-content: center;
   width: var(--size-xxl);
   height: var(--size-xxl);
