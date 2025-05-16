@@ -1,4 +1,14 @@
 :root {
+   --size-xxs: 4px;
+  --size-xs: 8px;
+  --size-sm: 12px;
+  --size-ms: 16px; 
+  --size-md: 20px;
+  --size-lg: 24px;
+  --size-xl: 32px;
+  --size-xxl: 48px;
+  --size-xxxl: 64px;
+  
   /* Color variables */
   --blue-1: #ebecfd;
   --blue-2: #d0d2fa;
@@ -199,15 +209,7 @@
   /* Font variables */
   --font-family: "Roboto", sans-serif;
   --font-size: 14px;
-  
-  /* Size variables */
-  --size-xxs: 4px;
-  --size-xs: 8px;
-  --size-sm: 12px;
-  --size-md: 20px;
-  --size-lg: 24px;
-  --size-xl: 32px;
-  --size-xxl: 48px;
+
 }
 
 /* Normal CSS rules, outside :root */
