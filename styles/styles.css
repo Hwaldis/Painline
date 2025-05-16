@@ -260,9 +260,9 @@ input[type="url"] {
 select {
   font-family: var(--font-family);
   font-size: var(--font-size);
-  padding: var(--size-sm) var(--size-md);
+  padding: var(--size-xs) var(--size-sm);
   border: 1px solid var(--grey-4);
-  border-radius: var(--size-xs);
+  border-radius: var(--size-xxs);
   width: 100%;
   box-sizing: border-box;
   color: var(--color-text-base);
