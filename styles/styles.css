@@ -268,41 +268,12 @@ select {
   padding-right: calc(var(--size-md) + 1.5em);
 }
 
-select:focus {
-  border-color: var(--blue-6);
-  outline: none;
-}
-
-select:hover {
-  border-color: var(--blue-5);
-}
-
-select:focus {
-  border-color: var(--blue-6);
-  outline: none;
-}
-
-select:hover {
-  border-color: var(--blue-5);
-}
-
-/* Hover state */
-select:hover {
-  border-color: var(--blue-6);
-}
-
-/* Focus state */
-select:focus {
-  border-color: var(--blue-6);
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(58, 67, 235, 0.3);
-}
-
 /* Hover state */
 input[type="text"]:hover,
 input[type="email"]:hover,
 input[type="tel"]:hover,
-input[type="url"]:hover {
+input[type="url"]:hover 
+Select {
   border-color: var(--blue-4);
 }
 
@@ -310,7 +281,8 @@ input[type="url"]:hover {
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
-input[type="url"]:focus {
+input[type="url"]:focus 
+Select {
   border-color: var(--blue-7);
   outline: none;
   box-shadow: 0 0 0 3px rgba(58, 67, 235, 0.3); /* subtle blue glow */
@@ -318,17 +290,26 @@ input[type="url"]:focus {
 
 /* Buttons */
 button {
-  font-family: var(--font-family);
-  font-size: 14px;
   background-color: var(--blue-6);
-  color: var(--color-text-light-solid);
+  color: white;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  padding: var(--size-sm) var(--size-md);
   border: none;
-  padding: 10px 16px;
-  border-radius: 4px;
+  border-radius: var(--size-xs);
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.2s ease-in-out;
 }
 
 button:hover {
-  background-color: var(--blue-7);
+  background-color: var(--blue-4);
+}
+button:focus {
+  outline: 2px solid var(--blue-4);
+  outline-offset: 2px;
+}
+button:disabled {
+  background-color: var(--grey-2);
+  cursor: not-allowed;
+  color: var(--grey-4);
 }
