@@ -258,7 +258,7 @@ input[type="url"] {
 }
 
 /* Select styles*/
-select id {
+select {
   appearance: none; /* Removes native styling in most browsers */
   -webkit-appearance: none;
   -moz-appearance: none;
