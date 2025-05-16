@@ -237,7 +237,7 @@ label {
   font-size: 14px;
   color: var(--color-text-base);
   margin-bottom: 6px;
-  font-weight: 400; /* or normal depending on your design */
+  font-weight: 600; /* or normal depending on your design */
 }
 
 /* Input styles */
