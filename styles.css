@@ -5,7 +5,7 @@ body {
 .test-box {
   background-color: var(--blue-1);
   padding: 2rem;
-  color: pink;
+  color: #722ed1;
   border: 1px solid var(--blue-6);
   font-family: sans-serif;
 }
