@@ -382,7 +382,6 @@ button[type="default"]:disabled {
 .step::before {
   content: attr(data-step);
   display: inline-flex;
-  align-items: absolute;
   justify-content: center;
   width: var(--size-xxl);
   height: var(--size-xxl);
@@ -392,6 +391,8 @@ button[type="default"]:disabled {
   font-weight: 600;
   margin: 0 auto;
   transition: background 0.25s;
+  font-size: 24px;
+  align-items: center;
 }
 
 /* active / completed */
