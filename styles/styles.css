@@ -184,7 +184,6 @@
 
 [data-theme="dark"] {
   /* Dark Mode Colors */
-
   --purple-dark: #5A17AF;
   --magenta-dark: #870E65;
   --red-dark: #8B102A;
@@ -198,10 +197,19 @@
   /* For dark mode text and bg, you can add or override here */
   --color-text-base: #ececed;
   --color-bg-base: #1c1d20;
-
+}
   /* Font variables */
   --font-family: "Roboto", sans-serif;
   --font-size: 14px;
+  
+  /* Size variables */
+  --size-xxs: 4px;
+  --size-xs: 8px;
+  --size-sm: 12px;
+  --size-md: 20px;
+  --size-lg: 24px;
+  --size-xl: 32px;
+  --size-xxl: 48px;
 }
 
 /* Normal CSS rules, outside :root */
@@ -232,29 +240,39 @@ label {
   font-weight: 600; /* or normal depending on your design */
 }
 
-/* Inputs */
+/* Input styles */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="url"] {
   font-family: var(--font-family);
-  font-size: 14px;
-  padding: 8px 10px;
+  font-size: var(--font-size);
+  padding: var(--size-xs) var(--size-sm);
   border: 1px solid var(--grey-4);
-  border-radius: 4px;
+  border-radius: var(--size-xxs);
   width: 100%;
   box-sizing: border-box;
   color: var(--color-text-base);
   background-color: var(--color-bg-base);
-  transition: border-color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
+/* Hover state */
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+input[type="url"]:hover {
+  border-color: var(--blue-4);
+}
+
+/* Focus state */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
 input[type="url"]:focus {
-  border-color: var(--blue-6);
+  border-color: var(--blue-7);
   outline: none;
+  box-shadow: 0 0 0 3px rgba(58, 67, 235, 0.3); /* subtle blue glow */
 }
 
 /* Buttons */
