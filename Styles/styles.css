@@ -12,6 +12,10 @@ body {
   cursor: pointer;
 }
 :root {
+  --blue-6: #3a43eb;
+}
+
+:root {
   /* Light Mode Colors */
   
   /* Blue */
