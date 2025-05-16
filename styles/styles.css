@@ -180,8 +180,6 @@
   --font-family: 'Roboto', sans-serif;
   --font-size: 14px;
 
-}
-
 [data-theme="dark"] {
   /* Dark Mode Colors */
   --purple-dark: #5A17AF;
