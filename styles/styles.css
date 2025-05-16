@@ -352,7 +352,7 @@ button[type="default"]:disabled {
 /* connecting line */
 .progress-steps::before {
   content: "";
-  position: absolute;
+  position: center;
   top: calc(50% - 2px);
   left: 0;
   width: 100%;
@@ -382,8 +382,8 @@ button[type="default"]:disabled {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: var(--size-lg);
-  height: var(--size-lg);
+  width: var(--size-xxl);
+  height: var(--size-xxl);
   background: var(--grey-3);
   color: var(--color-bg-base);
   border-radius: 50%;
