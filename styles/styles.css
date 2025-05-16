@@ -220,3 +220,55 @@ body {
   line-height: 1.5;
   color: var(--color-text-base);
 }
+
+/* Labels */
+label {
+  display: block;
+  font-family: var(--font-family);
+  font-size: 14px;
+  color: var(--color-text-base);
+  margin-bottom: 6px;
+  font-weight: 600; /* or normal depending on your design */
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"] {
+  font-family: var(--font-family);
+  font-size: 14px;
+  padding: 8px 10px;
+  border: 1px solid var(--grey-4);
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--color-text-base);
+  background-color: var(--color-bg-base);
+  transition: border-color 0.2s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus {
+  border-color: var(--blue-6);
+  outline: none;
+}
+
+/* Buttons */
+button {
+  font-family: var(--font-family);
+  font-size: 14px;
+  background-color: var(--blue-6);
+  color: var(--color-text-light-solid);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--blue-7);
+}
