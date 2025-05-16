@@ -352,7 +352,7 @@ button[type="default"]:disabled {
 /* connecting line */
 .progress-steps::before {
   content: "";
-  position: center;
+  position: absolute;
   top: calc(50% - 2px);
   left: 0;
   width: 100%;
