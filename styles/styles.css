@@ -177,8 +177,9 @@
   --brand-recruiterrecommended: #EAA723;
 
   /* Font variables */
-  --font-family: "Roboto", sans-serif;
+  --font-family: 'Roboto', sans-serif;
   --font-size: 14px;
+
 }
 
 [data-theme="dark"] {
