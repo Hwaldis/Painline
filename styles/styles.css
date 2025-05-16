@@ -367,7 +367,7 @@ button[type="default"]:disabled {
   z-index: 1;                    /* above the line */
   text-align: center;
   flex: 1 1 0;
-  padding-top: 25px;
+  padding-top: 67.5px;
 }
 
 .step span {
