@@ -244,42 +244,37 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-input[type="url"] {
-  font-family: var(--font-family);
-  font-size: var(--font-size);
-  padding: var(--size-xs) var(--size-sm);
-  border: 1px solid var(--grey-4);
-  border-radius: var(--size-xxs);
-  width: 100%;
-  box-sizing: border-box;
-  color: var(--color-text-base);
-  background-color: var(--color-bg-base);
-  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-/* Select styles*/
+input[type="url"] 
 select {
-  appearance: none; /* Removes native styling in most browsers */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-
   font-family: var(--font-family);
   font-size: var(--font-size);
-  padding: var(--size-xs) var(--size-sm);
+  padding: var(--size-sm) var(--size-md);
   border: 1px solid var(--grey-4);
-  border-radius: var(--size-xxs);
+  border-radius: var(--size-xs);
   width: 100%;
   box-sizing: border-box;
   color: var(--color-text-base);
   background-color: var(--color-bg-base);
   transition: border-color 0.2s ease-in-out;
 
-  /* Optional: add a custom arrow icon */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
   background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg fill='%23666' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right var(--size-sm) center;
   background-size: 1em;
-  padding-right: calc(var(--size-md) + 1.5em); /* extra space for arrow */
+  padding-right: calc(var(--size-md) + 1.5em);
+}
+
+select:focus {
+  border-color: var(--blue-6);
+  outline: none;
+}
+
+select:hover {
+  border-color: var(--blue-5);
 }
 
 select:focus {
