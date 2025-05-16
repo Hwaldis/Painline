@@ -256,6 +256,45 @@ input[type="url"] {
   background-color: var(--color-bg-base);
   transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
+/* Select styles*/
+select {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  padding: var(--size-xs) var(--size-sm);
+  border: 1px solid var(--grey-4);
+  border-radius: var(--size-xxs);
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--color-text-base);
+  background-color: var(--color-bg-base);
+  appearance: none; /* remove default arrow */
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"><path fill="none" stroke="%23666" stroke-width="1.5" d="M1 1l4 4 4-4"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px 6px;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+}
+select:hover {
+  border-color: var(--blue-4);
+}
+select:focus {
+  border-color: var(--blue-6);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(58, 67, 235, 0.3);
+}
+
+/* Hover state */
+select:hover {
+  border-color: var(--blue-6);
+}
+
+/* Focus state */
+select:focus {
+  border-color: var(--blue-6);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(58, 67, 235, 0.3);
+}
 
 /* Hover state */
 input[type="text"]:hover,
