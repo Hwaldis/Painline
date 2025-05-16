@@ -237,7 +237,7 @@ label {
   font-size: 14px;
   color: var(--color-text-base);
   margin-bottom: 6px;
-  font-weight: 600; /* or normal depending on your design */
+  font-weight: 400; /* or normal depending on your design */
 }
 
 /* Input styles */
@@ -245,10 +245,10 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="url"] 
-select {
+Select {
   font-family: var(--font-family);
   font-size: var(--font-size);
-  padding: var(--size-sm) var(--size-md);
+  padding: var(--size-xs) var(--size-sm);
   border: 1px solid var(--grey-4);
   border-radius: var(--size-xs);
   width: 100%;
